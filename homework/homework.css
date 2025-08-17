@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Italiana&family=Prata&display=swap');
+
+body {
+    background: linear-gradient(-45deg, #74070e, #9a1f28, #d94e4e, #f4e3b2);
+    background-size: 400% 400%;
+    animation: gradientMove 15s ease infinite;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    color: #f4e3b2;
+    text-align: center;
+    font-family: 'Prata', serif;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    animation: float 6s ease-in-out infinite;
+}
+
+h2 {
+    font-family: 'Italiana', serif;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    font-size: 1.1rem;
+    padding: 5px 0;
+    transition: transform 0.3s;
+}
+li:hover {
+    transform: scale(1.1);
+    color: #fff5d6;
+}
+
+a {
+    color: #ffe5a9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #ffffff;
+}
+
+img {
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
